@@ -1,4 +1,5 @@
 #include <mdspan>
+#include <span>
 #include <iostream>
 #include <vector>
 
