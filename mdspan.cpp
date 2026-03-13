@@ -21,6 +21,20 @@ int main()
 	  }
 	  std::cout << "\n";
   }
+
+    
+  std::span<double> sp(vec);
+  std::cout << "\nspan over vec : ";
+  for (auto x : sp)
+      std::cout << x << "  ";
+  std::cout << "\n";
+
+  auto sub = sp.subspan(2, 3);
+
+  std::cout << "subspan (index 2, length 3) : ";
+  for (auto x : sub)
+      std::cout << x << "  ";
+  std::cout << "\n";
+	
   return EXIT_SUCCESS;
 }
-
